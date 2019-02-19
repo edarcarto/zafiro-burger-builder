@@ -7,3 +7,4 @@ Linea : 399  => modules: true, localIdentName: '[name]__[local]__[hash:base64:5]
 * <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />*
 # A gregar las carpetas assets, components, containers, hoc
 # Creando contendor padre BurgerBuilder
+# Agragando la librería npm i prop-types --save (validaciones de components)
