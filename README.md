@@ -9,3 +9,4 @@ Linea : 399  => modules: true, localIdentName: '[name]__[local]__[hash:base64:5]
 ### Creando contendor padre BurgerBuilder
 ### Agragando la librería npm i prop-types --save (validaciones de components)
 ### () => this.func se utiliza cuando quieras mandar parametros personalizados
+# Estructura del proyecto

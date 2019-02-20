@@ -10,22 +10,27 @@ class Layout extends Component {
 		showSideDrawer : true
 	}
 
+	// esta función es para cerrar el backdrop
 	sideDrawerCloseHandler = () => {
 		this.setState({
 			showSideDrawer: false
 		})
 	}
 
-	sideDraweToggleHandler = () => {
+	// esta funcion permite mostrar el menu del Toolbar
+	sideDrawerToggleHandler = () => {
+		// el valor a retornar es boleano pero la intención de poner !prevState.showSideDrawer
+		// es porque se quiere cambiar el valor cuando sea true a false y viceversa
 		this.setState((prevState) => {
 			return {showSideDrawer: !prevState.showSideDrawer}
 		})
 	}
 
+	// el componente funcional aux sirve para retornar el contenido ante un componente mayor
 	render() {
 		return (
 			<Aux>
-				<Toolbar drawerToggleClicked={this.sideDraweToggleHandler} />
+				<Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
 				<SideDrawer 
 					open={this.state.showSideDrawer} 
 					closed={this.sideDrawerCloseHandler} 
