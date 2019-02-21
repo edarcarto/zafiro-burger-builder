@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import classes from './BurgerIngredient.css';
 
+// En esta clase base contruyes el pan en base al tipo muestras un div
+// con un css espeficio
 class BurgerIngredient extends Component {
     render() {
         let ingredient = null;
@@ -38,6 +40,7 @@ class BurgerIngredient extends Component {
     }
 }
 
+// validas que el parametro sea cadena y siempre lo manden
 BurgerIngredient.propType = {
     type: PropTypes.string.isRequired
 }

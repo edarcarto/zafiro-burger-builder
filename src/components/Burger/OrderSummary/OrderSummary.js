@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Aux from '../../../hoc/Auxiliary/Auxiliary';
 import Button from './../../UI/Button/Button';
 
+// contenido del modal
 class OrderSummary extends Component {
 
     //  Esta podría ser un componente funcional

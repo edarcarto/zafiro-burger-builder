@@ -15,15 +15,20 @@ const burger = (props) => {
             });
         })
         .reduce((arr, el) => {
+            // en concat juntas arr con el nuevo valor
             return arr.concat(el);
         });
+        // en caso el valor sea 0 muestras el siguiente mensaje
         if(transformIngredients.length === 0){
             transformIngredients = <p>Please start adding ingredients</p>
         }
+        // sino muestras los ingredientes
     return (
         <div className={classes.Burger}>
+            {/* La capa de arriba del pan */}
             <BurgerIngredient type="bread-top" />
             {transformIngredients}
+            {/* La capa de abajo del pan */}
             <BurgerIngredient type="bread-bottom" />
         </div>
     );
